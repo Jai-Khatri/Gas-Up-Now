@@ -28,9 +28,12 @@ app.use("/api/admin", adminRoutes);
 if(process.env.NODE_ENV === "production"){
   app.use(express.static(path.join(__dirname, "../frontend/gasupnow/dist")));
 
-  app.get("*" , (req, res) => {
-    res.sendFile(path.join(__dirname , "../frontend/gasupnow", "dist" , "index.html"))
-  });
+  const distPath = path.join(__dirname, "../frontend/gasupnow/dist");
+  app.use(express.static(distPath));
+
+  app.get("*", (req, res) => {
+  res.sendFile(path.resolve(distPath, "index.html"));
+});
 }
 
 app.listen(PORT , () => {
