@@ -5,7 +5,6 @@ const Home = () => {
   return (
     <div className="min-h-screen bg-gradient-to-r from-black to-[#434343] text-white">
 
-      {/* Hero Section */}
       <section className="flex flex-col items-center justify-center text-center px-6 py-20 max-w-7xl mx-auto">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
           Welcome to <span className="text-red-500">Gas Up Now</span>
@@ -20,7 +19,6 @@ const Home = () => {
         </Link>
       </section>
 
-      {/* Why Choose Us */}
       <section className="bg-[#1f1f1f] py-20 px-6">
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold mb-12">Why Choose Us?</h2>
@@ -39,7 +37,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Services Overview */}
       <section className="py-20 px-6 max-w-7xl mx-auto">
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-center mb-12">Our Services</h2>
         <div className="space-y-12 text-gray-300 md:text-lg lg:text-xl">
@@ -65,7 +62,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Call to Action */}
       <section className="text-center py-20 px-6 bg-gradient-to-r from-[#1a1a1a] to-[#2e2e2e]">
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">Ready to Get Started?</h2>
         <p className="text-gray-300 text-lg md:text-xl mb-8">

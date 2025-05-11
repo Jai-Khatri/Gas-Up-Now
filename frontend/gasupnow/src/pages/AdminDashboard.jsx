@@ -27,7 +27,7 @@ const AdminDashboard = () => {
 
   const handleLogout = () => {
     logout();
-    navigate('/login');
+    navigate('/admin-login');
   };
 
   const statusOptions = ['Pending', 'Confirmed', 'Dispatched', 'Delivered', 'Cancelled'];
